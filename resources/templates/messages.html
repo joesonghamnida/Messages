@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <link rel="stylesheet" href=“./stylesheet.css" type="text/css">
+    </head>
+<body>
+Hello, {{name}}
+<form action="/create-message" method="post">
+    <input type="text" placeholder="please enter your message" name="message">
+    <button type="submit">Submit</button>
+</form>
+Messages:
+<ol>
+    {{#messages}}
+    <li>{{.}}</li>
+    {{/messages}}
+</ol>
+</body>
+</html>
