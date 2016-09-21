@@ -1,8 +1,0 @@
-body{
-    background: darkseagreen;
-    font-family: Arial, sans-serif;
-}
-
-ol{
-background-color: aqua;
-}

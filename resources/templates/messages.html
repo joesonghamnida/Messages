@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
-        <link rel="stylesheet" href=“./stylesheet.css" type="text/css">
-    </head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!--<style>
+        body {
+            background: darkseagreen;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+        ol{
+            text-align: center;
+        }
+        li{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>-->
+</head>
 <body>
-Hello, {{name}}
+    <h1>
+        Hello, {{name}}
+    </h1>
 <form action="/create-message" method="post">
     <input type="text" placeholder="please enter your message" name="message">
     <button type="submit">Submit</button>
 </form>
-Messages:
+    <h3>
+        Messages:
+    </h3>
 <ol>
     {{#messages}}
     <li>{{.}}</li>
