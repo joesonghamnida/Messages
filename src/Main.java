@@ -20,8 +20,7 @@ public class Main {
 
         Spark.staticFileLocation("/public");
         Spark.init();
-
-        //three parameters: path, route, response transformer
+        
         get("/",
                 ((request, response) -> {
                     HashMap h = new HashMap();
